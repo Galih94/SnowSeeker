@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationSplitView {
-            Text("Primary")
+            NavigationLink("Primary") {
+                Text("New view")
+            }
         } detail: {
-            Text("Secondary")
+            Text("Content")
         }
-
     }
 }
 
