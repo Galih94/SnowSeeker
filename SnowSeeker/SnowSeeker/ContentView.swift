@@ -16,6 +16,7 @@ struct ContentView: View {
         } detail: {
             Text("Content")
                 .navigationTitle("Content View")
+                .toolbar(.hidden, for: .navigationBar)
         }
         .navigationSplitViewStyle(.balanced)
     }
