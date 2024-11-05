@@ -21,12 +21,13 @@ struct ContentView: View {
             selectedUser = User()
             isShowingUser = true
         }
-//        .sheet(item: $selectedUser) { user in
-//            Text(user.id)
-//        }
-        .alert("Welcome", isPresented: $isShowingUser, presenting: selectedUser) { user in
-            Button(user.id) {}
+        .sheet(item: $selectedUser) { user in
+            Text(user.id)
+                .presentationDetents([.medium, .large])
         }
+//        .alert("Welcome", isPresented: $isShowingUser, presenting: selectedUser) { user in
+//            Button(user.id) {}
+//        }
     }
 }
 
