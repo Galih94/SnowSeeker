@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var searchText = ""
+    
     var body: some View {
-        Text("Hello world")
+        NavigationStack {
+            Text("Searching for: \(searchText)")
+                .searchable(text: $searchText, prompt: "Look for something?")
+                .navigationTitle("Searching")
+                
+        }
     }
 }
 
