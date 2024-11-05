@@ -7,9 +7,33 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UserView: View {
     var body: some View {
-        Text("Hello world")
+        Group {
+            Text("Name: Galih")
+            Text("Country: Indonesia")
+            Text("Pets: Gecko")
+        }
+        .font(.title)
+    }
+}
+
+struct ContentView: View {
+    @State private var layoutVertically = false
+    var body: some View {
+        Button(action: {
+            layoutVertically.toggle()
+        }, label: {
+            if layoutVertically {
+                VStack {
+                    UserView()
+                }
+            } else {
+                HStack {
+                    UserView()
+                }
+            }
+        })
     }
 }
 
