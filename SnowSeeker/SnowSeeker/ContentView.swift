@@ -26,6 +26,9 @@ struct ContentView: View {
         VStack {
             Text("Hello \(player.name)")
             HighScoreView()
+            Button("Add score") {
+                player.highScore += 1
+            }
         }
         .environment(player)
     }
