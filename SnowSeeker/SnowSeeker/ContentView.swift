@@ -19,21 +19,13 @@ struct UserView: View {
 }
 
 struct ContentView: View {
-    @State private var layoutVertically = false
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     var body: some View {
-        Button(action: {
-            layoutVertically.toggle()
-        }, label: {
-            if layoutVertically {
-                VStack {
-                    UserView()
-                }
-            } else {
-                HStack {
-                    UserView()
-                }
-            }
-        })
+        if horizontalSizeClass == .compact {
+            VStack(content: UserView.init)
+        } else {
+            HStack(content: UserView.init)
+        }
     }
 }
 
