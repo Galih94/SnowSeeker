@@ -7,9 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
+@Observable
+class Player {
+    var name = "Anonymous"
+    var highScore = 0
+}
+
+struct HighScoreView: View {
+    var player: Player
     var body: some View {
-        Text("Hello world")
+        Text("Your high score is: \(player.highScore)")
+    }
+}
+
+struct ContentView: View {
+    @State private var player = Player()
+    var body: some View {
+        Text("Hello \(player.name)")
+        HighScoreView(player: player)
     }
 }
 
