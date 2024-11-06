@@ -26,6 +26,12 @@ struct ResortView: View {
                         .padding(.vertical)
                 }
                 .padding(.horizontal)
+                HStack {
+                    ResortDetailsView(resort: resort)
+                    SkiDetailsView(resort: resort)
+                }
+                .padding(.vertical)
+                .background(.primary.opacity(0.1))
             }
         }
         .navigationTitle("\(resort.name), \(resort.country)")
