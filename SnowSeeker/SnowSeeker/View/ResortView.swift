@@ -22,7 +22,7 @@ struct ResortView: View {
                     Text("Facilities")
                         .font(.headline)
                     
-                    Text(resort.facilities.joined(separator: ", "))
+                    Text(resort.facilities, format: .list(type: .and))
                         .padding(.vertical)
                 }
                 .padding(.horizontal)
