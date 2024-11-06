@@ -11,6 +11,7 @@
 		2A3E12802CD8688E0037BC23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E127F2CD8688E0037BC23 /* ContentView.swift */; };
 		2A3E12822CD868900037BC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E12812CD868900037BC23 /* Assets.xcassets */; };
 		2A3E12852CD868900037BC23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E12842CD868900037BC23 /* Preview Assets.xcassets */; };
+		2AD6A30F2CDB05FB00C11DCE /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AD6A30E2CDB05FB00C11DCE /* resorts.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2A3E127F2CD8688E0037BC23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A3E12812CD868900037BC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A3E12842CD868900037BC23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AD6A30E2CDB05FB00C11DCE /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2A3E127D2CD8688E0037BC23 /* SnowSeekerApp.swift */,
 				2A3E127F2CD8688E0037BC23 /* ContentView.swift */,
+				2AD6A30D2CDB05D500C11DCE /* JSON */,
 				2A3E12812CD868900037BC23 /* Assets.xcassets */,
 				2A3E12832CD868900037BC23 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				2A3E12842CD868900037BC23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AD6A30D2CDB05D500C11DCE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2AD6A30E2CDB05FB00C11DCE /* resorts.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD6A30F2CDB05FB00C11DCE /* resorts.json in Resources */,
 				2A3E12852CD868900037BC23 /* Preview Assets.xcassets in Resources */,
 				2A3E12822CD868900037BC23 /* Assets.xcassets in Resources */,
 			);
