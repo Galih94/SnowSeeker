@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ResortView: View {
+    @Environment(\.dynamicTypeSize) var dynamicTypeSize
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     let resort: Resort
     var body: some View {
@@ -17,7 +18,7 @@ struct ResortView: View {
                     .resizable()
                     .scaledToFit()
                 HStack {
-                    if horizontalSizeClass == .compact {
+                    if horizontalSizeClass == .compact && dynamicTypeSize > .large {
                         VStack(spacing: 10) {
                             ResortDetailsView(resort: resort)
                         }
