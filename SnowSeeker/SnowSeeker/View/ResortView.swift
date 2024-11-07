@@ -10,6 +10,10 @@ import SwiftUI
 struct ResortView: View {
     @Environment(\.dynamicTypeSize) var dynamicTypeSize
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
+    @State private var selectedFacility: Facility?
+    @State private var showingFacility = false
+    
     let resort: Resort
     var body: some View {
         ScrollView {
@@ -44,8 +48,14 @@ struct ResortView: View {
 //                        .padding(.vertical)
                     HStack {
                         ForEach(resort.facilityTypes) { facility in
-                            facility.icon
-                                .font(.title)
+                            
+                            Button(action: {
+                                selectedFacility = facility
+                                showingFacility = true
+                            }, label: {
+                                facility.icon
+                                    .font(.title)
+                            })
                         }
                     }
                     .padding(.vertical)
@@ -55,6 +65,12 @@ struct ResortView: View {
         }
         .navigationTitle("\(resort.name), \(resort.country)")
         .navigationBarTitleDisplayMode(.inline)
+        .alert(selectedFacility?.name ?? "More Info", isPresented: $showingFacility, presenting: selectedFacility) { _ in
+            /// closw by default
+        } message: { facility in
+            Text(facility.decription)
+        }
+
     }
 }
 
