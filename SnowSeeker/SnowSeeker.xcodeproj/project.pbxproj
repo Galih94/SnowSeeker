@@ -20,6 +20,7 @@
 		2AD6A31A2CDB231000C11DCE /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6A3192CDB231000C11DCE /* ResortView.swift */; };
 		2AD6A31C2CDB352200C11DCE /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6A31B2CDB352200C11DCE /* SkiDetailsView.swift */; };
 		2AD6A31E2CDB364900C11DCE /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6A31D2CDB364900C11DCE /* ResortDetailsView.swift */; };
+		2ADD1D3C2CDDE3BA00D2C95A /* Array-Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD1D3B2CDDE3BA00D2C95A /* Array-Resort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		2AD6A3192CDB231000C11DCE /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
 		2AD6A31B2CDB352200C11DCE /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
 		2AD6A31D2CDB364900C11DCE /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		2ADD1D3B2CDDE3BA00D2C95A /* Array-Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array-Resort.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD6A3142CDB083300C11DCE /* Bundle-Decodable.swift */,
+				2ADD1D3B2CDDE3BA00D2C95A /* Array-Resort.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				2AD6A31C2CDB352200C11DCE /* SkiDetailsView.swift in Sources */,
 				2AD6A31E2CDB364900C11DCE /* ResortDetailsView.swift in Sources */,
 				2AC9A4432CDC87D9000C1212 /* Favorites.swift in Sources */,
+				2ADD1D3C2CDDE3BA00D2C95A /* Array-Resort.swift in Sources */,
 				2AC9A4412CDC7027000C1212 /* Facility.swift in Sources */,
 				2A3E12802CD8688E0037BC23 /* ContentView.swift in Sources */,
 				2AD6A3122CDB069D00C11DCE /* Resort.swift in Sources */,
